@@ -19,7 +19,7 @@ df_students = pd.DataFrame(data=data, index=range(1, 11))
 
 # In toàn bộ dữ liệu của bảng
 print("In toàn bộ dữ liệu của bảng:\n")
-print(df)
+print(df_students)
 
 # In 3 dòng đầu tiên
 print("In 3 dòng đầu tiên:\n")
@@ -38,7 +38,7 @@ print(df_students.loc[:, ['Name', 'Score']])
 
 # Thêm cột Pass dựa trên điều kiện của hàm evaluate_score
 print("\nThêm một cột tên Pass:")
-df_students['Pass'] = df['Score'].apply(evaluate_score)
+df_students['Pass'] = df_students['Score'].apply(evaluate_score)
 print(df_students)
 
 # Sắp xếp DataFrame giảm dần theo cột Score
