@@ -76,5 +76,5 @@ dict_new_employees = {
 }
 print("\n10. ")
 df_add_new_employees = pd.DataFrame(data = dict_new_employees)
-df_list_employees = pd.concat([df_new_employees, df_add_new_employees], ignore_index=True)
-print(df_list_employees)
+list_employees = pd.concat([df_new_employees, df_add_new_employees], ignore_index=True)
+print(list_employees)
